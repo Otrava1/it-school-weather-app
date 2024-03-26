@@ -1,7 +1,8 @@
 const returnToTopButton = document.querySelector('#return-to-top');
-const halfWindowHeight = window.innerHeight/2;
+
 
 document.addEventListener('scroll', function() {
+    const halfWindowHeight = window.innerHeight/2;
     if (window.scrollY > halfWindowHeight) {
         returnToTopButton.style.visibility = 'visible';
         returnToTopButton.setAttribute('class', 'slide-in-bottom');
