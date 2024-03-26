@@ -9,6 +9,7 @@ if(currentCityFromLS) {
 };
 if(!currentCityFromLS){
     localStorage.setItem('city', 'București');
+    currentCityFromLS = 'București';
 }
 
 // Afisam vremea curenta folosind o functie din alt fisier
